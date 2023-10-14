@@ -29,6 +29,10 @@ width: 90%;
 .checkout .btn{
     margin-top: 20px;
 }
+.checkout > img{
+    width: 30%;
+    margin: 20px;
+  }
 
 @media screen and (max-width: 768px) {
   .checkout > img{
