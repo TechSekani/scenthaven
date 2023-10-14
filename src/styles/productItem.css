@@ -1,0 +1,115 @@
+.product-item{
+    padding: 10px 100px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.product-item__image{
+    width: 50%;
+    border: 1px solid #acacac44;
+}
+
+.product-item__image img{
+    width: 80%;
+    height: 100%;
+}
+
+
+.product-item__info{
+    width: 50%;
+    padding: 30px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #acacac44;
+}
+
+.product-item__info .product-item__sub .inStock{
+    color: #0f0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product-item__info .product-item__sub .outStock{
+    color: #f00;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.product-item__info .product-item__sub h2{
+    font-size: 30px;
+}
+
+.product-item__info .product-item__sub h3{
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.product-item__info .product-item__sub h4{
+    margin-top: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.product-item__info .product-item__sub h3 span,
+.product-item__info .product-item__sub h4 span{
+    font-weight: 600;
+}
+
+.product-item__btns{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.product-item__btns > button:hover{
+    background-color: #D9A887;
+}
+.item_quantity .quantity{
+    display: flex;
+    margin-top: 15px;
+}
+
+.item_quantity .quantity .btn{
+    font-weight: bolder;
+    border-color: #acacac;
+}
+
+.item_quantity .quantity .btn:hover{
+    background-color: #a1a1a163;
+}
+
+.item_quantity .quantity .count{
+    width: 70px;
+    border: 1px solid #acacac;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-item{
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+.product-item__image{
+    width: 100%;
+}
+
+.product-item__image img{
+    width: 100%;
+}
+
+
+.product-item__info{
+    width: 100%;
+    padding: 10px;
+    margin-left: 0px;
+    margin-top: 30px;
+}
+}

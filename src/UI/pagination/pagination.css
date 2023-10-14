@@ -1,0 +1,20 @@
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  
+  .pagination h5 {
+    padding: 2px 8px;
+    border: 1px solid #4a4a4b;
+    color: #4a4a4b;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .pagination h5:hover {
+    color: #000;
+    border: 1px solid #000;
+  }

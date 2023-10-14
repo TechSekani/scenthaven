@@ -1,0 +1,107 @@
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 80px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #fafafa;
+  box-shadow: 0 0 7px rgb(196, 195, 195);
+  z-index: 55;
+}
+
+.logo {
+  font-family: "Dancing script";
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #b47d58;
+}
+
+.nav_links {
+  margin-left: auto;
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_links a {
+  margin-right: 55px;
+  position: relative;
+}
+
+.nav_links a:hover,
+.nav_links .active {
+  color: #d9a887;
+}
+
+.nav_links a::after,
+.nav_links .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d9a887;
+  transition: 0.3s ease-in-out;
+}
+
+.nav_links a:hover::after,
+.nav_links .active::after {
+  width: 50%;
+}
+
+.cart_icon {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 15px 10px;
+    justify-content: space-between;
+  }
+
+  .nav_links {
+    padding-top: 20px;
+    position: fixed;
+    top: 55px;
+    right: 0;
+    width: 70%;
+    height: 50vh;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.7s ease-in-out;
+  }
+
+  .cart_icon {
+    position: absolute;
+    right: 50px;
+    padding: 7px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .isOpen {
+    transform: translateX(0%);
+  }
+}

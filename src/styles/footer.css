@@ -1,0 +1,76 @@
+footer {
+  margin-top: 50px;
+  background-color: #232323;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px 100px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links .social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: rgb(189, 189, 189);
+  transition: 0.4s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #d9a887;
+}
+
+footer .newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer .newsletter form input {
+  padding: 10px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.089);
+  font-weight: 700;
+  color: #fafafa;
+}
+
+footer .newsletter form .btn {
+  border: none;
+  background-color: #d9a887;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 50px 10px 70px;
+    gap: 30px;
+  }
+
+  footer .logo {
+    order: 2;
+    margin-top: 50px;
+  }
+  
+.footer-links{
+  order: 3;
+}
+  
+  footer .newsletter{
+    order: 1;
+  }
+  footer .newsletter form input {
+    width: 100%;
+  }
+
+  footer .newsletter form .btn {
+    width: 50%;
+    margin-top: 10px;
+  }
+}

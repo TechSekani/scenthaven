@@ -1,0 +1,131 @@
+.cart {
+  position: fixed;
+  top: 70px;
+  right: 70px;
+  background-color: #f1f1f1;
+  height: 80vh;
+  width: 30%;
+  padding: 10px;
+  transform: translateY(-200%);
+  transition: 0.9s ease-in-out;
+  z-index: 10;
+  overflow-y: auto;
+  font-family: "open sans";
+}
+.cart::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cart::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cart::-webkit-scrollbar-thumb {
+  background-color: #acacac;
+  border-radius: 20px;
+}
+
+.isOpen {
+  transform: translateY(0);
+}
+
+.cart > h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  border: 1px solid #acacac;
+  margin-top: 10px;
+}
+
+.cartItem:hover {
+  transform: scale(1.02);
+  box-shadow: 1px 2px 3px #a0a0a08c;
+}
+
+.cartItem img {
+  width: 100px;
+}
+
+.cartItem .itembody {
+  width: 60%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+.cartItem .itembody h2 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cartItem .quantity {
+  margin-top: 6px;
+  display: flex;
+  height: 25px;
+}
+
+.cartItem .quantity .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #acacac;
+}
+
+.cartItem .quantity .btn:hover {
+  background-color: #acacac;
+}
+
+.cartItem .quantity .count {
+  width: 40px;
+  height: 25px;
+  border: 1px solid #acacac;
+  border-left: 0px;
+  border-right: 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.cartItem .rmvbtn {
+  margin-right: 13px;
+}
+
+.cart .cart_footer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart .cart_footer p:last-of-type {
+  border: 1px solid #acacac;
+  margin: 15px;
+  padding: 5px 10px;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .cart_footer .btn {
+  width: 100%;
+}
+
+.cart .cart_footer .btn:hover {
+  background-color: #d9a887;
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    top: 55px;
+    right: 0;
+    width: 100%;
+    height: 95vh;
+  }
+}

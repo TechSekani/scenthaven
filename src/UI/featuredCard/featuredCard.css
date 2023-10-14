@@ -1,0 +1,15 @@
+.featuredcard {
+    margin: 80px 0;
+  }
+  
+  .featuredcard h2 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    font-family: "open sans";
+  }
+  
+  @media screen and (max-width: 768px) {
+    .featuredcard h2 {
+      margin-left: 20px;
+    }
+  }

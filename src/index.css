@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: #fafafa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+body{
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+ body::-webkit-scrollbar-track {
+  background: #b6b5b5;        
+}
+
+ body::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 20px;      
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.btn{
+  position: relative;
+  padding: 10px;
+  border: 1px solid #0e0e0e;
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+  transition: .3s ease-out;
+}

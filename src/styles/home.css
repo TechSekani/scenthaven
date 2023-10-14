@@ -1,0 +1,188 @@
+#wrapper {
+  margin-top: 70px;
+}
+
+
+
+/* hero */
+
+.hero {
+  padding-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero_img {
+  margin-left: auto;
+  width: 50%;
+  height: calc(100vh - 70px);
+}
+
+.hero .hero_text {
+  width: 50%;
+  padding-right: 40px;
+  text-align: end;
+}
+
+.hero .hero_text h2 {
+  font-size: 4.0rem;
+  font-family: serif;
+}
+
+.hero .hero_text a {
+  position: relative;
+  display: block;
+  width: fit-content;
+  padding: 10px 15px;
+  border: 1px solid;
+  margin-top: 30px;
+  margin-left: auto;
+  font-weight: 800;
+}
+
+.hero .hero_text a::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #d9a887;
+  z-index: -1;
+  transition: 0.8s ease-in-out;
+}
+
+.hero .hero_text a:hover::before {
+  width: 100%;
+}
+
+.swiper {
+  padding: 10px 100px;
+}
+
+
+
+/* category */
+
+.category .con {
+  display: flex;
+}
+
+.category .con img {
+  width: 45%;
+  height: 70vh;
+}
+
+.category .con .con_body {
+  width: 50%;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.category .con .con_body h3{
+  font-size: 35px;
+}
+
+.category .con .con_body .btn {
+  width: fit-content;
+  padding: 10px 30px;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.category .con .con_body .btn:hover {
+  background: #d9a887;
+}
+
+.category .women {
+  flex-direction: row-reverse;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    padding-left: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .hero_img {
+    margin-left: auto;
+    width: 100%;
+    height: 50vh;
+  }
+
+  .hero .hero_text {
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+  }
+
+  .hero .hero_text h2 {
+    font-size: 35px;
+  }
+
+  .hero .hero_text p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .hero .hero_text a{
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+
+  .swiper {
+    padding: 10px;
+  }
+
+  .category .con {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category .con img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .category .con .con_body {
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .category .con .con_body h3{
+    font-size: 22px;
+  }
+
+  .category .con .con_body .btn {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .category .con .con_body .btn:hover {
+    background: #d9a887;
+  }
+
+  .category .women {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+}

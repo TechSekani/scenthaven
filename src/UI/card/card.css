@@ -1,0 +1,41 @@
+.card{
+    border: 1px solid #dbdbdb;
+    height: fit-content;
+}
+
+.card_img{
+    width: 100%;
+    height: 200px;
+}
+
+.card_body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 10px;
+}
+
+.card_body .card_title{
+    margin-top: 10px;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card .btn{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.card .btn:hover{
+    background-color: #D9A887;
+}
+
+@media screen and (max-width: 768px) {
+    
+.card_img{
+    height: 160px;
+}
+}
