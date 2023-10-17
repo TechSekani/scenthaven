@@ -14,6 +14,7 @@ const RootLayout = () => {
       <Cart isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} />
 
       <main id="wrapper">
+        <ScrollRestoration />
         <Outlet />
       </main>
       <Footer />
