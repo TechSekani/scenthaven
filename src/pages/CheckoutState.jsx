@@ -1,5 +1,5 @@
-import celebration from "../assets/Celebration-amico.png"
 import React from "react";
+import celebration from "../assets/Celebration-amico.png"
 import { Link, useParams } from "react-router-dom";
 import Button from "../UI/Button";
 

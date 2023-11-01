@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .checkout .img_wrapper {
@@ -16,7 +15,7 @@
 }
 
 .img_wrapper img:first-child {
-width: 90%;
+  width: 90%;
   position: absolute;
   top: -10%;
   left: 5%;
@@ -26,16 +25,16 @@ width: 90%;
   width: 60%;
 }
 
-.checkout .btn{
-    margin-top: 20px;
+.checkout .btn {
+  margin-top: 20px;
 }
-.checkout > img{
-    width: 30%;
-    margin: 20px;
-  }
+.checkout > img {
+  width: 30%;
+  margin: 20px;
+}
 
 @media screen and (max-width: 768px) {
-  .checkout > img{
+  .checkout > img {
     width: 90%;
     margin-bottom: 20px;
   }
